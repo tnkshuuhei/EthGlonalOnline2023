@@ -4,7 +4,7 @@ import { ConnectButton } from "@rainbow-me/rainbowkit";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "./ui/button";
-import { useSafeAA } from "@/hooks/AccountAbstractionContext";
+import { useSafeAA } from "@/providers/AccountAbstractionProvider";
 
 const Header = () => {
   const { loginWeb3Auth, logoutWeb3Auth, address } = useSafeAA();
